@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kişisel Antrenman Programı</title>
+    <style>
+      :root {
+        --primary-color: #3a4750;
+        --secondary-color: #303841;
+        --accent-color: #00adb5;
+        --text-color: #eeeeee;
+        --bg-color: #222831;
+        --border-radius: 12px;
+        --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          Helvetica,
+          Arial,
+          sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        padding: 20px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 10px;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+      }
+
+      h1 {
+        color: var(--accent-color);
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+
+      h2 {
+        color: var(--accent-color);
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+      }
+
+      .day-card {
+        background-color: var(--secondary-color);
+        border-radius: var(--border-radius);
+        padding: 25px;
+        margin-bottom: 30px;
+        box-shadow: var(--shadow);
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      li.exercise {
+        background-color: var(--primary-color);
+        margin-bottom: 12px;
+        padding: 15px 20px;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition:
+          background-color 0.3s ease,
+          transform 0.2s ease;
+        cursor: pointer;
+        border-left: 5px solid transparent;
+      }
+
+      li.exercise:hover {
+        background-color: #4a5a66;
+        transform: translateY(-2px);
+        border-left-color: var(--accent-color);
+      }
+
+      li.exercise strong {
+        color: var(--text-color);
+        display: block;
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+      }
+
+      li.exercise span {
+        color: #b0bec5;
+        font-size: 0.9rem;
+      }
+
+      .notes {
+        background-color: var(--secondary-color);
+        border-radius: var(--border-radius);
+        padding: 25px;
+        margin-top: 40px;
+        border-top: 4px solid var(--accent-color);
+      }
+
+      .notes ul {
+        padding-left: 20px;
+      }
+
+      .notes li {
+        margin-bottom: 10px;
+        list-style-type: disc;
+      }
+
+
+
+      /* --- Responsive Tasarım --- */
+      @media (max-width: 768px) {
+        body {
+          padding: 15px;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 1.6rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 10px;
+        }
+        .container {
+          padding: 0 5px;
+        }
+        h1 {
+          font-size: 1.8rem;
+        }
+        h2 {
+          font-size: 1.4rem;
+        }
+        li.exercise {
+          padding: 12px 15px;
+        }
+        li.exercise strong {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Evde 3 Günlük Antrenman Programı</h1>
+      </header>
+
+      <div class="day-card">
+        <h2>1. GÜN: İTİŞ (Göğüs, Omuz, Arka Kol)</h2>
+        <ul>
+          <li class="exercise" data-video-id="lNdi7VEf2Ew">
+            <strong>Dumbbell Floor Press:</strong> 4 Set x 15-25 Tekrar
+            <span>Yere sırt üstü uzan, dirseklerin yere değince dur ve göğsünü sıkarak yukarı it.</span>
+          </li>
+          <li class="exercise" data-video-id="bgC53-J-6gA">
+            <strong>Dumbbell Floor Fly:</strong> 4 Set x 15-25 Tekrar
+            <span>Dirseklerinde hafif bir bükülme koru ve göğsünde gerilmeyi hissederek kolları yana aç.</span>
+          </li>
+          <li class="exercise" data-video-id="Hi7JkJ9bG6g">
+            <strong>Şınav (Push-up):</strong> 4 Set x Tükenene Kadar
+            <span>Klasik şınav hareketi, vücudunu düz tut.</span>
+          </li>
+          <li class="exercise" data-video-id="jaxbEHLC4qU">
+            <strong>Diamond Push Ups:</strong> 4 Set x 15-25 Tekrar
+            <span>Ellerin birbirine yakın, elmas pozisyonunda şınav.</span>
+          </li>
+          <li class="exercise" data-video-id="m3FTgWtJsFE">
+            <strong>Wide Push Ups:</strong> 4 Set x 15-25 Tekrar
+            <span>Ellerin omuzlardan geniş açıkta olduğu şınav varyasyonu.</span>
+          </li>
+          <li class="exercise" data-video-id="aedn4SSc3Ww">
+            <strong>Dumbbell Shoulder Press:</strong> 4 Set x 15-25 Tekrar
+            <span>Karın kaslarını sıkarak belini koru ve dambılları başının üzerinde birleştir.</span>
+          </li>
+          <li class="exercise" data-video-id="eaM8JxEn6Ig">
+            <strong>Lateral Raises:</strong> 3 Set x Tükenene Kadar
+            <span>Dirseklerin hafif bükülü kalsın ve kaldırma işlemini dirseklerinle yönlendir.</span>
+          </li>
+          <li class="exercise" data-video-id="84XhJDxRf10">
+            <strong>Bent-Over Reverse Fly:</strong> 3 Set x Tükenene Kadar
+            <span>Sırtını düz tutarak öne eğil ve kürek kemiklerini birbirine yaklaştır.</span>
+          </li>
+          <li class="exercise" data-video-id="YM8iX9BJWjA">
+            <strong>Overhead Triceps Extension:</strong> 4 Set x 15-25 Tekrar
+            <span>Dirseklerini başına yakın tut ve hareketin alt noktasında tam bir esneme sağla.</span>
+          </li>
+          <li class="exercise" data-video-id="ShCYaoHmWmk">
+            <strong>Triceps Kickback:</strong> 4 Set x 15-25 Tekrar
+            <span>Gövdeni sabit tut, sadece ön kolun hareket etsin ve üst noktada arka kolunu sık.</span>
+          </li>
+          <li class="exercise" data-video-id="LIJFwB5NwPs">
+            <strong>Inverse Zottman Curls:</strong> 3 Set x Tükenene Kadar
+            <span>Ön kol ve biceps için kombine hareket.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="day-card">
+        <h2>2. GÜN: ÇEKİŞ (Sırt, Biceps, Karın)</h2>
+        <ul>
+          <li class="exercise" data-video-id="HUp6djHa37Y">
+            <strong>Bent-Over Dumbbell Row:</strong> 4 Set x 15-25 Tekrar
+            <span>Sırtını düz tutarak kalçadan eğil ve dambılları karnına doğru çek.</span>
+          </li>
+          <li class="exercise" data-video-id="ZRSGpBUVcNw">
+            <strong>One-Arm Dumbbell Row:</strong> 4 Set x Her Kol 15-25 Tekrar
+            <span>Sırtını yere paralel tut ve dambılı kalçana doğru çekerek sırtını sıkıştır.</span>
+          </li>
+          <li class="exercise" data-video-id="fUDUiefmvRo">
+            <strong>Dumbbell Pullover (Yerde):</strong> 3 Set x 15-20 Tekrar
+            <span>Kalçanı aşağıda tut ve dambılı indirirken sırt kaslarındaki gerilmeyi hisset.</span>
+          </li>
+          <li class="exercise" data-video-id="xvEkgGUrGPM">
+            <strong>Reverse Dumbbell Fly:</strong> 3 Set x 15-20 Tekrar
+            <span>Kalçanı aşağıda tut ve dambılı indirirken sırt kaslarındaki gerilmeyi hisset.</span>
+          </li>
+          <li class="exercise" data-video-id="RfGESet5bJg">
+            <strong>Dumbbell Bicep Curl:</strong> 4 Set x 15-25 Tekrar
+            <span>Dirseklerini vücuduna sabitle ve sallanmadan, kontrollü bir kaldırma yap.</span>
+          </li>
+          <li class="exercise" data-video-id="NyW2fT2gQhM">
+            <strong>Hammer Curl:</strong> 4 Set x 15-25 Tekrar
+            <span>Avuç içlerin birbirine bakacak şekilde nötr bir tutuş kullan.</span>
+          </li>
+          <li class="exercise" data-video-id="RfGESet5bJg">
+            <strong>Concentration Curl:</strong> 3 Set x Her Kol Tükenene Kadar
+            <span>Dirseğini bacağının iç kısmına sabitle ve tepe noktasında biceps kasını güçlüce sık.</span>
+          </li>
+          <li class="exercise" data-video-id="LIJFwB5NwPs">
+            <strong>Inverse Zottman Curls:</strong> 3 Set x Tükenene Kadar
+            <span>Ön kol ve biceps için kombine hareket.</span>
+          </li>
+          <li class="exercise" data-video-id="Dd1wdWUqIGo">
+            <strong>Reverse Grip Curl:</strong> 4 Set x 15-25 Tekrar
+            <span>Avuç içlerin aşağı bakacak şekilde dambılları kaldır, ön kolunu da çalıştırır.</span>
+          </li>
+          <li class="exercise" data-video-id="fbGDQGHxvHk">
+            <strong>Lying Leg Raise:</strong> 3 Set x 20-30 Tekrar
+            <span>Bacaklarını kontrollü indir, yere değdirmeden tekrar kaldırarak alt karnını çalıştır.</span>
+          </li>
+          <li class="exercise" data-video-id="ARAWlmlgPbg">
+            <strong>Dumbbell Side Bend:</strong> 3 Set x Her Yöne 20-25 Tekrar
+            <span>Hareketi sadece yana doğru eğilerek yap, öne veya arkaya bükülme.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="day-card">
+        <h2>3. GÜN: BACAK & KARIN</h2>
+        <ul>
+          <li class="exercise" data-video-id="_i6qpcI1Nw4">
+            <strong>Hip Thrust:</strong> 4 Set x 20-30 Tekrar
+            <span>Kalça ve gluteus kaslarını güçlendirir.</span>
+          </li>
+          <li class="exercise" data-video-id="7E-ugKcWeu4">
+            <strong>Goblet Squat:</strong> 5 Set x 20-30 Tekrar
+            <span>Göğsünü yukarıda, sırtını düz tut ve olabildiğince derine inmeye çalış.</span>
+          </li>
+          <li class="exercise" data-video-id="9p5e2BSvoLs">
+            <strong>Bulgarian Split Squat:</strong> 4 Set x 20-30 Tekrar
+            <span>Tek bacak squat varyasyonu, denge ve güç gerektirir.</span>
+          </li>
+          <li class="exercise" data-video-id="wqMYwk_-P14">
+            <strong>Dumbbell RDL:</strong> 4 Set x 20-30 Tekrar
+            <span>Dizlerini hafif bükülü tut, sırtını düz tutarak kalçanı geriye it.</span>
+          </li>
+          <li class="exercise" data-video-id="ReNofXwy_js">
+            <strong>Dumbbell Lunge:</strong> 4 Set x Her Bacak 15-20 Tekrar
+            <span>Adım attığında her iki dizinin de 90 derecelik açı oluşturmasını hedefle.</span>
+          </li>
+          <li class="exercise" data-video-id="dn0OfNMXoOw">
+            <strong>Plie Squat:</strong> 4 Set x 20-30 Tekrar
+            <span>Ayakların geniş ve dışa dönük olsun, iç bacaklarındaki gerilmeyi hisset.</span>
+          </li>
+          <li class="exercise" data-video-id="hiFEDOmklBA">
+            <strong>Dumbbell Glute Bridge:</strong> 4 Set x 25-35 Tekrar
+            <span>Dambılı kalçanın üzerine yerleştir, tepe noktasında kalçanı 2 saniye sık.</span>
+          </li>
+          <li class="exercise" data-video-id="_1FEB79qONA">
+            <strong>Reverse Lunge to Lateral Lunge:</strong> 4 Set x 10-15 Tekrar
+            <span>Kombine lunge hareketi, tüm bacak kaslarını çalıştırır.</span>
+          </li>
+          <li class="exercise" data-video-id="DF0sPfwys_g">
+            <strong>Russian Twist:</strong> 3 Set x Her Yöne 20-25 Tekrar
+            <span>Dönüşleri omuzlarından değil, gövdenden yaparak yan karın kaslarını hedefle.</span>
+          </li>
+          <li class="exercise" data-video-id="G9XfQJPBJVI">
+            <strong>Dumbbell Crunch:</strong> 3 Set x 20-30 Tekrar
+            <span>Belinin yerden kalkmamasına özen göster, hareketi yavaş ve kontrollü yap.</span>
+          </li>
+          <li class="exercise" data-video-id="pvIjsG5Svck">
+            <strong>Plank:</strong> 3 Set x Maksimum Süre
+            <span>Kalçanı sıkarak vücudunu baştan topuklara kadar düz bir çizgi halinde tut.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="notes">
+        <h2>Önemli Notlar</h2>
+        <ul>
+          <li>
+            <strong>Isınma & Soğuma:</strong> Her antrenmandan önce 5-10 dakika
+            dinamik ısınma, sonrasında ise 5 dakika statik esneme yapmayı
+            unutma.
+          </li>
+          <li>
+            <strong>Form Odaklı Ol:</strong> Videolardaki formu dikkatle izle.
+            Ağırlığı artırmaktan çok, hareketi doğru yapmak önemlidir.
+          </li>
+          <li>
+            <strong>Zorluk Seviyesi:</strong> Hareketler kolay gelmeye
+            başladığında tekrar sayılarını artırabilir, setler arası dinlenmeyi
+            kısaltabilir veya daha zorlayıcı varyasyonlara geçebilirsin.
+          </li>
+          <li>
+            <strong>Dinlenme:</strong> Setler arasında 60-90 saniye dinlen.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      const exercises = document.querySelectorAll(".exercise");
+
+      exercises.forEach((exercise) => {
+        exercise.addEventListener("click", () => {
+          const videoId = exercise.getAttribute("data-video-id");
+          if (videoId) {
+            window.open(`https://www.youtube.com/watch?v=${videoId}`, '_blank');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
